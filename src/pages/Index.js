@@ -20,9 +20,10 @@ export default function Index(props) {
           <ExternalLink href={bookmark.url} target="_blank">
             <h2>{bookmark.title}</h2>
           </ExternalLink>
-          <Form action={`/delete/${book._id}`} method="post">
-        <input type="submit" value={`Delete ${cheese.name}`}/>
+          <Form action={`/delete/${bookmark._id}`} method="post">
+        <input type="submit" value={`Delete ${bookmark.title}`}/>
       </Form>
+      
         </div>
       ))}
     </div>
