@@ -34,6 +34,7 @@ export default function Index(props) {
               <h2>{bookmark.title}</h2>
             </ExternalLink>
             <div className="entryButtons">
+              <button className="EditButton"onClick={() => setShowForm(!showForm)}><img src="https://i.imgur.com/YMUERzd.png" alt="edit pencil icon"/></button>
               <Form action={`/delete/${bookmark._id}`} method="post">
                 <input
                   type="image"
@@ -42,7 +43,6 @@ export default function Index(props) {
                   alt="x icon"
                 />
               </Form>
-              <button className="EditButton"onClick={() => setShowForm(!showForm)}><img src="https://i.imgur.com/YMUERzd.png" alt="edit pencil icon"/></button>
             </div>
           </div>
           {showForm ? 
