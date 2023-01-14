@@ -42,7 +42,7 @@ export const updateAction = async ({ request, params }) => {
     body: JSON.stringify(updateBookmark),
   });
   
-  return redirect("/" + params.id);
+  return redirect("/");
 };
 
 export const deleteAction = async ({ params }) => {
