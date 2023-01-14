@@ -16,8 +16,19 @@ code {
     monospace;
 }
 
-Header{
-  background-color: aliceblue;
+.nav{
+  background-color: #001021;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,.5);
+}
+
+.nav h1{
+  margin: 0;
+  padding: 10px;
+  color:white;
 }
 
 .allElements{
@@ -44,12 +55,16 @@ Header{
 }
 .bookmarkEntries{
   width: 25rem;
- background-color: aliceblue;
+ background-color: #cde5ed;
   border-radius: 1rem;
   padding: 5px;
-  box-shadow: 2px 2px 6px 0px rgba(0,0,0,.5);
   margin-top: 1rem;
- 
+}
+
+.bookmarkEntries:hover{
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,.5);
+  transition: .2s ease-in-out;
+  
 }
 
 .entryButtons{
@@ -58,6 +73,8 @@ Header{
 
 .createForm{
   margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
 }
 
 a{
